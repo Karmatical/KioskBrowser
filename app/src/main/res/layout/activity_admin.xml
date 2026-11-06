@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="Kiosk Admin"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Target URL"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTargetUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:hint="https://www.google.com"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Password"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAdminPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Admin Password"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnReloadPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reload Page"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSetHomeApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set as Default Home Launcher"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnEnableAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Device Administrator"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnExitKiosk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit Kiosk App"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

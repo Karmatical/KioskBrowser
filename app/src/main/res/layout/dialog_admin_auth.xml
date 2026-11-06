@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Admin Password"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:clickable="false"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="16dp" />
+
+        <!-- On-Screen Keypad Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Numbers Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+                <Button android:id="@+id/btnKey1" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="1" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey2" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="2" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey3" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="3" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey4" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="4" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey5" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="5" android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Numbers Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+                <Button android:id="@+id/btnKey6" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="6" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey7" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="7" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey8" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="8" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey9" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="9" android:textSize="16sp"/>
+                <Button android:id="@+id/btnKey0" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="0" android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- QWERTY Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+                <Button android:id="@+id/btnKeyQ" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="Q" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyW" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="W" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyE" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="E" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyR" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="R" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyT" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="T" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyY" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="Y" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyU" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="U" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyI" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="I" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyO" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:layout_marginRight="2dp" android:text="O" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyP" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="P" android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- QWERTY Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+                <Button android:id="@+id/btnKeyA" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="A" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyS" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="S" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyD" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="D" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyF" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="F" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyG" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="G" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyH" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="H" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyJ" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="J" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyK" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="K" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyL" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="L" android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- QWERTY Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp">
+                <Button android:id="@+id/btnKeyZ" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="Z" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyX" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="X" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyC" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="C" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyV" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="V" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyB" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="B" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyN" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="3dp" android:layout_marginRight="3dp" android:text="N" android:textSize="15sp"/>
+                <Button android:id="@+id/btnKeyM" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="M" android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- Controls Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnKeyClear"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="CLR"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnKeyDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="⌫"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnKeyOk"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.5"
+                    android:text="OK"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
